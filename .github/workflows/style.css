@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+ background: azure;
+ font-family: "Montserrat" , helvetica;
+ animation: toggle 9s forwards ease-in-out;
+}
+
+h1 { 
+ animation-name: the;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ background: radial-gradient(yellowgreen, lightseagreen, lightgreen);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ font-size: 3em;
+ text-align:center;
+}
+
+h2 {
+ text-align:center;
+ line-height: 50px;
+ padding: 20px;
+ color: lightseagreen;
+ letter-spacing: 4px;
+ font-size: 2em;
+}
+
+h3 {
+ animation: new 3s forwards;
+ color: grey;
+ line-height: 1px;
+ font-size: 1.5em;
+} 
+
+span {
+ color: transparent;
+ animation-name: green;
+ animation-delay: 5s;
+ animation-fill-mode: forwards;
+ 
+}
+
+@keyframes the {
+33%{ background: radial-gradient(yellowgreen, lightseagreen, lightgreen);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ 
+66% { background: linear-gradient(yellowgreen, lightseagreen, lightgreen);
+-webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ 
+100% { background: conic-gradient(yellowgreen, lightseagreen, lightgreen);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ }
+}
+
+@keyframes new {
+ from { margin: 0;}
+ to { margin-left: 45%; color:green; }
+}
+
+@keyframes green {
+ from { color: transparent; }
+ to { color: green; }
+}
+
+@keyframes toggle {
+ to { background-color: black; 
+  filter: none;
+ }
+}
+#foot {
+ width: 100%;
+ text-align: center;
+ visibility: hidden;
+ padding: 20px;
+}
+
+button {
+letter-spacing: 8px;
+ padding: 22px;
+ width: auto;
+ height: auto;
+ overflow: hidden;
+ background-color: aqua;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.3rem;
+ margin: 5px;
+ outline: 5px;
+ border: 3px solid green;
+ 
+}
